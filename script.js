@@ -33,3 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+  // career form submission handler
+
+  document.getElementById('careerForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    this.classList.add('d-none');
+    document.getElementById('successMessage').classList.remove('d-none');
+  });
