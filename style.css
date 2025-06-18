@@ -224,45 +224,110 @@ h2 {
 /* Services Section Styling */
 
 
-.product-img {
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  #services {
+    position: relative;
+    overflow: hidden;
+    color: #fff; /* Text default */
+  }
 
-.product-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+  #services .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
 
- .card-custom {
-      background-color: #ffffff;
-      color: #111111;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 0.8s ease-in-out both;
-    }
+  #services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    z-index: 1;
+  }
 
-    .card-custom:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    }
+  #services .container {
+    position: relative;
+    z-index: 2;
+  }
 
-    .card-icon {
+  /* Flip Card Styling */
+  #services .flip-card {
+    background: transparent;
+    perspective: 1000px;
+  }
+
+  #services .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  #services .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  #services .flip-card-front,
+  #services .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  #services .flip-card-front {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+
+  #services .flip-card-back {
+    background: rgba(0, 0, 0, 0.7);
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+ #services .card-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #services .card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  #services .card-custom h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  #services .card-custom p {
+    font-size: 14px;
+  }
+
+   #services  .card-icon {
       font-size: 28px;
       margin-bottom: 12px;
       color: #007bff;
     }
 
-    .know-more {
+    
+
+    #services .know-more {
       font-weight: 500;
       font-size: 0.95rem;
       color: #007bff;
@@ -270,7 +335,7 @@ h2 {
       transition: all 0.2s ease;
     }
 
-    .know-more:hover {
+    #services .know-more:hover {
       text-decoration: underline;
       margin-left: 2px;
     }
@@ -285,6 +350,58 @@ h2 {
         transform: translateY(0);
       }
     }
+
+
+
+    /* Target all product cards inside #products */
+#products .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+#products .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+#products .product-img {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#products .card:hover .product-img {
+  transform: scale(1.05);
+}
+
+/* Title Styling */
+#products .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Text Styling */
+#products .card-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Section Background (optional) */
+#products {
+  
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
+
 
 
 
