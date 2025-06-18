@@ -61,7 +61,7 @@ section {
 }
 
 
-
+#contactALt,
 #about {
   background-color: #ffffff;
 }
@@ -353,6 +353,70 @@ h2 {
 
   #contact p {
     font-size: 0.9rem;
+  }
+}
+
+/* Contact Alt*/
+
+#contactAlt {
+  height: 50vh;
+  min-height: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+#contactAlt .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contactAlt h2,
+#contactAlt h4 {
+  color: #0d6efd;
+}
+
+#contactAlt form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  height: 100%;
+  overflow: auto;
+}
+
+#contactAlt .ratio iframe {
+  border-radius: 12px;
+  height: 100%;
+}
+
+#contactAlt .row {
+  height: 100%;
+}
+
+#contactAlt .col-lg-6 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #contactAlt {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  #contactAlt .row {
+    flex-direction: column;
+  }
+
+  #contactAlt .col-lg-6 {
+    height: auto;
+    margin-bottom: 20px;
   }
 }
 
