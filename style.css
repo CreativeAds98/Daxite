@@ -74,7 +74,7 @@ section {
 }
 
 
-
+#about h2,
 #whatwedo h2,
 #services h2,
 #products h2,
@@ -209,6 +209,11 @@ h2 {
 
 
 /* About US */
+#about h2{
+  text-align: center;
+}
+
+
 #about img.icon {
   width: 28px;
   height: 28px;
