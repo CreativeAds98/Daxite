@@ -9,17 +9,17 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Logo styling */
-.fixed-logo-2 {
+.fixed-bootstrap-icon {
   position: fixed;
-  top: 10px;             /* distance from top */
-  left: 10px;           /* position on the right */
-  height: 60px;          /* adjust logo size */
-  width: auto;
-  z-index: 1050;         /* keep it above all content */
-  border-radius: 8px;    /* optional styling */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* optional effect */
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-size: 36px;
+  color: #003A63; /* Bootstrap red */
+
 }
+
+
 
 .logo {
   height: 70px;       /* Adjust size as needed */
