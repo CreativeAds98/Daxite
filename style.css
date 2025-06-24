@@ -454,8 +454,8 @@ color: white;
 /* Contact Alt*/
 
 #contactAlt {
-  height: 50vh;
-  min-height: 400px;
+  height: 80vh; /* Increased from 50vh */
+  min-height: 500px; /* Increased from 400px */
   background-color: white;
   display: flex;
   align-items: center;
@@ -479,7 +479,7 @@ color: white;
   border-radius: 12px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   height: 100%;
-  overflow: auto;
+  
 }
 
 #contactAlt .ratio iframe {
