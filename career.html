@@ -94,27 +94,32 @@
       <div class="col-md-6">
         <div class="bg-white p-4 rounded shadow-sm">
           <h4 class="text-center mb-3">Apply Now</h4>
-          <form id="careerForm" enctype="multipart/form-data">
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="role" class="form-label">Job Role</label>
-              <input type="text" class="form-control" id="role" required>
-            </div>
-            <div class="mb-3">
-              <label for="cv" class="form-label">Upload Your CV</label>
-              <input type="file" class="form-control" id="cv" accept=".pdf,.doc,.docx" required>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary px-4">Submit Application</button>
-            </div>
-          </form>
+
+<form action="https://formspree.io/f/mblywkon" method="POST"  >
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="role" class="form-label">Job Role</label>
+    <input type="text" class="form-control" id="role" name="role" required>
+  </div>
+<!-- Upload CV Section 
+  <div class="mb-3">
+    <label for="cv" class="form-label">Upload Your CV</label>
+    <input type="file" class="form-control" id="cv" name="upload" accept=".pdf,.doc,.docx" required>
+  </div>
+-->
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary px-4">Submit Application</button>
+  </div>
+</form>
 
           <!-- Success Message -->
           <div id="successMessage" class="alert alert-success mt-3 text-center d-none" role="alert">
